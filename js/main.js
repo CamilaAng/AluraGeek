@@ -15,7 +15,7 @@ formularioSeleccion.addEventListener("submit", evento => {
     const articulos = JSON.parse(localStorage.getItem("articulos")) || [];
     articulos.push(listaDatosSeleccion);
     localStorage.setItem("articulos", JSON.stringify(articulos));
-    window.location.href = "./pagina_articulo_seleccionado.html";
+    window.location.href = "./html/pagina_articulo_seleccionado.html";
 });
 
 formularioSeleccion.querySelectorAll('input[required]').forEach(campo => {
@@ -47,7 +47,7 @@ formularioContacto.addEventListener("submit", evento => {
     const contactos = JSON.parse(localStorage.getItem("contactos")) || [];
     contactos.push(listaDatosContacto);
     localStorage.setItem("contactos", JSON.stringify(contactos));
-    window.location.href = "./pagina_contacto_enviado.html";
+    window.location.href = "./html/pagina_contacto_enviado.html";
 });
 
 formularioContacto.querySelectorAll('input[required]').forEach(campo => {
